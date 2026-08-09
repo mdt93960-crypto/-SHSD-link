@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}500 - Internal Server Error{% endblock %}
+
+{% block content %}
+<div class="container py-5 text-center">
+    <h1 class="display-1 text-danger">500</h1>
+    <h3>Server Error</h3>
+    <p class="text-muted">কিছু একটা সমস্যা হয়েছে। অনুগ্রহ করে কিছুক্ষণ পর আবার চেষ্টা করুন।</p>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-primary mt-3">Go to Dashboard</a>
+</div>
+{% endblock %}
